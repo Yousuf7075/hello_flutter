@@ -12,25 +12,25 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.lightGreen,
         ),
-        body: Stack(
-          fit: StackFit.expand,
-          children: <Widget>[
-            Material(color: Colors.yellowAccent),
-            Positioned(
-              top: 20,
-              left: 20,
-              child: Icon(Icons.star, size: 50),
+        body: Column(
+          children: [
+            Expanded(
+              child: Container(
+                decoration: const BoxDecoration(color: Colors.green),
+              ),
+              flex: 2,
             ),
-            Positioned(
-              top: 340,
-              left: 250,
-              child: IconButton(
-                onPressed: (){},
-                icon: Icon(
-                  Icons.call,
-                  size: 30,
-                ),
-              )
+            Expanded(
+              child: Container(
+                decoration: const BoxDecoration(color: Colors.orange),
+              ),
+              flex: 1,
+            ),
+            Expanded(
+              child: Container(
+                decoration: const BoxDecoration(color: Colors.black),
+              ),
+              flex: 2,
             ),
           ],
         ));
